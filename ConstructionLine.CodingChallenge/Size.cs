@@ -28,5 +28,17 @@ namespace ConstructionLine.CodingChallenge
                 Medium,
                 Large
             };
+
+        public static Dictionary<Size, int> AllAsDictionary()
+        {
+            var sizes = new Dictionary<Size, int>();
+            foreach (var size in All)
+            {
+                sizes.Add(size, 0);
+            }
+
+            return sizes;
+        } 
+            
     }
 }

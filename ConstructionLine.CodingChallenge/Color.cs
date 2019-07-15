@@ -32,5 +32,15 @@ namespace ConstructionLine.CodingChallenge
                 White,
                 Black
             };
+
+        public static Dictionary<Color, int> AllAsDictionary()
+        {
+            var result = new Dictionary<Color, int>();
+            foreach (var item in All)
+            {
+                result.Add(item, 0);
+            }
+            return result;
+        }
     }
 }
